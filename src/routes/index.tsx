@@ -634,7 +634,7 @@ function Index() {
           <div>
             <div className="flex items-center gap-3 text-white">
               <div className="h-9 w-9 rounded-xl bg-white text-slate-900 flex items-center justify-center"><Car className="h-5 w-5" /></div>
-              <div className="leading-none"><div className="display font-extrabold tracking-tight">AUTOPRIME</div><div className="text-[11px] tracking-[0.18em] text-slate-400">CONCESSIONÁRIA PREMIUM</div></div>
+              <div className="leading-none"><div className="display font-extrabold tracking-tight -translate-y-0.5">AUTOPRIME</div><div className="text-[11px] tracking-[0.18em] text-slate-400 mt-1">CONCESSIONÁRIA PREMIUM</div></div>
             </div>
             <p className="mt-3 text-sm leading-relaxed">A concessionária premium mais bem avaliada de São Paulo. Carros periciados, garantia e as melhores condições de financiamento.</p>
             <div className="mt-4 flex gap-2">
