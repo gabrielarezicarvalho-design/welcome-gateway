@@ -249,14 +249,14 @@ function Index() {
       </nav>
 
       {/* HERO */}
-      <section id="inicio" className="relative overflow-hidden bg-[#0f172a]">
-        <div className="absolute inset-0">
+      <section id="inicio" className="relative bg-[#0f172a]">
+        <div className="absolute inset-0 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80&auto=format&fit=crop" alt="" className="h-full w-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 to-[#0f172a]/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] to-transparent" />
         </div>
 
-        <div className="relative mx-auto max-w-[1280px] px-4 md:px-6 py-10 md:py-16 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="relative mx-auto max-w-[1280px] px-4 md:px-6 pt-10 md:pt-16 pb-16 md:pb-20 grid lg:grid-cols-2 gap-10 items-center">
           <div className="text-white">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/15 px-3 py-1.5 text-xs font-semibold tracking-wide backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" /> ESTOQUE ATUALIZADO HOJE • 347 VEÍCULOS
@@ -319,9 +319,9 @@ function Index() {
           </div>
         </div>
 
-        {/* SEARCH BAR FLOATING */}
-        <div className="relative mx-auto max-w-[1280px] px-4 md:px-6 -mb-8 md:-mb-10">
-          <div className="rounded-[20px] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.12)] border border-slate-200 p-3 md:p-4 flex flex-col md:flex-row gap-3 items-stretch md:items-center">
+        {/* SEARCH BAR — agora fora do overflow: fica sobre a borda, sem ser cortada */}
+        <div className="relative z-20 mx-auto max-w-[1280px] px-4 md:px-6">
+          <div className="translate-y-8 md:translate-y-10 rounded-[20px] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.14)] border border-slate-200 p-3 md:p-4 flex flex-col md:flex-row gap-3 items-stretch md:items-center">
             <div className="flex-1 relative">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
               <input
@@ -350,7 +350,7 @@ function Index() {
       </section>
 
       {/* TRUST BADGES */}
-      <section className="pt-14 pb-6 bg-[#f8fafc]">
+      <section className="pt-14 md:pt-16 pb-6 bg-[#f8fafc]">
         <div className="mx-auto max-w-[1280px] px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { icon: BadgeCheck, title: "Laudo cautelar aprovado", desc: "180 itens inspecionados" },
