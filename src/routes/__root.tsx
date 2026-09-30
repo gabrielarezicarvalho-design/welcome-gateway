@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "AutoPrime — Concessionária Premium | Carros Novos e Seminovos" },
+      {
+        name: "description",
+        content:
+          "AutoPrime: os melhores carros novos e seminovos com garantia, financiamento facilitado e entrega imediata. Mais de 300 veículos no estoque.",
+      },
+      { name: "author", content: "AutoPrime" },
+      { property: "og:title", content: "AutoPrime — Concessionária Premium" },
+      {
+        property: "og:description",
+        content: "Carros novos e seminovos com as melhores condições do mercado. Financiamento em até 60x.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@autoprime" },
     ],
     links: [
       {
@@ -102,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
